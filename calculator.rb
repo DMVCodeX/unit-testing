@@ -36,4 +36,9 @@ class TestCalculator < Minitest::Test
     calculator = Calculator.new
     assert_equal -2, calculator.add(1, -3)
   end
+
+  def test_subtract
+    calculator = Calculator.new
+    assert_equal 5, calculator.subtract(10, 5)
+  end
 end
