@@ -46,4 +46,9 @@ class TestCalculator < Minitest::Test
     calculator = Calculator.new
     assert_equal 27, calculator.multiply(9, 3)
   end
+
+  def test_divide
+    calculator = Calculator.new
+    assert_equal 4, calculator.divide(12, 3)
+  end
 end
