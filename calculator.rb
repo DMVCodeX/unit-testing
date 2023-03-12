@@ -41,4 +41,9 @@ class TestCalculator < Minitest::Test
     calculator = Calculator.new
     assert_equal 5, calculator.subtract(10, 5)
   end
+
+  def test_multiply
+    calculator = Calculator.new
+    assert_equal 27, calculator.multiply(9, 3)
+  end
 end
