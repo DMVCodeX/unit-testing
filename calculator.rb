@@ -56,4 +56,9 @@ class TestCalculator < Minitest::Test
     calculator = Calculator.new
     assert_equal 16, calculator.square(4)
   end
+
+  def test_power
+    calculator = Calculator.new
+    assert_equal 27, calculator.power(3, 3)
+  end
 end
